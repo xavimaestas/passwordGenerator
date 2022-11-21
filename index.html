@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Generate your <br><span style = "color: #4ADF86"> Secure Password</span></h1>
+        <h3>Never use the same unsafe password again.</h3>
+        <button id = "generate-button" onclick = "generatePassword()">Generate Passwords</button>
+        
+        <input id = "input-text"  type = "number" placeholder ="Enter Password Length Between 5 & 15" min = "5" max = "15" required></input>
+        <hr>
+        <! flexbox >
+        <div id = "flex-container">
+            <! first password box div >
+            <div class = "flex-item"><p id = "password-one" type = "number"></p></div>
+                <!second password box div >
+            <div class = "flex-item"><p type = "text" id = "password-two" ></p></div>
+            <div class = "break"></div>
+            <!third password box div >
+            <div class = "flex-item"><p id = "password-three"></p></div>
+            <!fourth password box div >
+            <div class = "flex-item"><p id = "password-four"></p></div>
+        </div>
+        <p id= "error">Please Follow the Instructions</p>
+           
+        <script src="index.js"></script>
+    </body>
+</html>
